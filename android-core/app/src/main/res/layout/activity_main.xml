@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.dyte.coresampleapp.MainActivity"
+    >
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/clErrorContainer"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@color/white"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:visibility="visible"
+      >
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="30dp"
+        android:minWidth="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvError"
+        android:text="Retry"
+        />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Some error message here"
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/clLoaderContainer"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/white"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:visibility="visible"
+      >
+
+    <ProgressBar
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:id="@+id/clDataContainer"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      android:background="@color/white"
+      android:visibility="gone"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      tools:visibility="visible"
+      >
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvVideoPeers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#666666"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/clBottombar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBottombar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+      <ImageView
+          android:id="@+id/ivSwitchCamera"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginEnd="8dp"
+          android:foreground="?android:attr/selectableItemBackground"
+          android:scaleType="centerInside"
+          android:src="@drawable/ic_baseline_switch_camera_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/ivMic"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:tint="@android:color/white"
+          />
+
+      <ImageView
+          android:id="@+id/ivMic"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginEnd="8dp"
+          android:foreground="?android:attr/selectableItemBackground"
+          android:scaleType="centerInside"
+          android:src="@drawable/ic_baseline_mic_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/ivCamera"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toEndOf="@+id/ivSwitchCamera"
+          app:layout_constraintTop_toTopOf="parent"
+          app:tint="@android:color/white"
+          />
+
+      <ImageView
+          android:id="@+id/ivCamera"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginStart="8dp"
+          android:foreground="?android:attr/selectableItemBackground"
+          android:scaleType="centerInside"
+          android:src="@drawable/ic_baseline_videocam_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toStartOf="@+id/ivLeaveCall"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toEndOf="@+id/ivMic"
+          app:layout_constraintTop_toTopOf="parent"
+          app:tint="@android:color/white"
+          />
+
+      <ImageView
+          android:id="@+id/ivLeaveCall"
+          android:layout_width="48dp"
+          android:layout_height="48dp"
+          android:layout_marginStart="8dp"
+          android:foreground="?android:attr/selectableItemBackground"
+          android:scaleType="centerInside"
+          android:src="@drawable/ic_baseline_call_end_24"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.5"
+          app:layout_constraintStart_toEndOf="@+id/ivCamera"
+          app:layout_constraintTop_toTopOf="parent"
+          app:tint="@android:color/white"
+          />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

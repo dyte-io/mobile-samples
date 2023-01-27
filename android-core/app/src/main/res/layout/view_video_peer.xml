@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="@drawable/bg_video_view"
+    >
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cvVideoContainer"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      app:cardPreventCornerOverlap="false"
+      app:cardUseCompatPadding="true"
+      app:cardCornerRadius="16dp"
+      android:elevation="0dp"
+      app:cardElevation="0dp"
+      >
+
+    <RelativeLayout
+        android:gravity="center"
+        android:id="@+id/rlVideoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        />
+
+  </androidx.cardview.widget.CardView>
+
+  <ImageView
+      android:elevation="20dp"
+      android:id="@+id/ivMic"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:layout_toLeftOf="@+id/ivVideo"
+      android:background="@drawable/bg_state_iv"
+      android:scaleType="centerInside"
+      tools:src="@drawable/ic_baseline_mic_off_24"
+      android:tint="#FFFFFF"
+      />
+
+  <ImageView
+      android:layout_marginRight="8dp"
+      android:elevation="20dp"
+      android:id="@+id/ivVideo"
+      android:layout_width="32dp"
+      android:layout_height="32dp"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentEnd="true"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="8dp"
+      android:background="@drawable/bg_state_iv"
+      android:scaleType="centerInside"
+      tools:src="@drawable/ic_baseline_videocam_off_24"
+      android:tint="#FFFFFF"
+      />
+
+
+  <TextView
+      android:elevation="20dp"
+      android:id="@+id/tvName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentTop="true"
+      android:layout_marginTop="8dp"
+      android:layout_marginStart="8dp"
+      android:background="@drawable/bg_toggle_btn"
+      android:paddingBottom="4dp"
+      android:paddingEnd="8dp"
+      android:paddingStart="8dp"
+      android:paddingTop="4dp"
+      android:scaleType="centerInside"
+      android:textColor="@android:color/white"
+      android:textStyle="bold"
+      android:tint="#FFFFFF"
+      tools:text="Rohit Khirid"
+      />
+
+  <TextView
+      android:visibility="gone"
+      tools:visibility="visible"
+      android:id="@+id/tvSelfInitials"
+      android:layout_width="100dp"
+      android:layout_height="100dp"
+      android:layout_centerInParent="true"
+      android:background="@drawable/bg_initials"
+      android:gravity="center"
+      android:textColor="@android:color/white"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      tools:text="AA"
+      />
+
+</RelativeLayout>
