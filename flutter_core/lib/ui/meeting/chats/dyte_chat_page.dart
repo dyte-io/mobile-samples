@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:dyte_core/dyte_core.dart';
 import 'package:file_picker/file_picker.dart';
@@ -32,7 +31,6 @@ class _DyteChatRoomState extends ConsumerState<DyteChatRoom> {
     );
     final Size size = MediaQuery.of(context).size;
     final chatApi = ref.watch(dyteClient).chat;
-    log(chatApi.messages.length.toString(), name: "Chat Messages");
     return Scaffold(
       appBar: const DyteAppBar(),
       body: SizedBox(
@@ -74,16 +72,13 @@ class _DyteChatRoomState extends ConsumerState<DyteChatRoom> {
                     onPressed: () async {
                       final file = await FilePicker.platform
                           .pickFiles(allowMultiple: false);
-                      log("SEND FILE MESSAGE: ${file!.files[0].path}, ${file.files[0].extension}");
-                      if (file.count > 0) {
+                      if (file!.count > 0) {
                         final message = chatController.text.isNotEmpty
                             ? chatController.text
                             : ' ';
 
                         if (file.files[0].path == null) {
-                          log("ERROR: FILE NOT AVAILABLE");
                         } else {
-                          log("SEND FILE MESSAGE: ${file.files[0].path}, ${file.files[0].extension}");
                           chatApi.sendFileMessage(file.files[0].path!, message);
                         }
                       }
@@ -97,16 +92,13 @@ class _DyteChatRoomState extends ConsumerState<DyteChatRoom> {
                     onPressed: () async {
                       final file = await FilePicker.platform
                           .pickFiles(type: FileType.image);
-                      log("SEND IMAGE MESSAGE: ${file!.files[0].path}, ${file.files[0].extension}");
-                      if (file.count > 0) {
+                      if (file!.count > 0) {
                         final message = chatController.text.isNotEmpty
                             ? chatController.text
                             : ' ';
 
                         if (file.files[0].path == null) {
-                          log("ERROR: IMAGE NOT AVAILABLE");
                         } else {
-                          log("SEND IMAGE MESSAGE: ${file.files[0].path}, ${file.files[0].extension}");
                           chatApi.sendImageMessage(
                               file.files[0].path!, message);
                         }
@@ -156,7 +148,6 @@ class _DyteChatRoomState extends ConsumerState<DyteChatRoom> {
       subtitle: Image.network(
         message.link,
         errorBuilder: (context, error, stackTrace) {
-          log("NETWORK IMAGE ERROR: $error");
           return Container();
         },
       ),

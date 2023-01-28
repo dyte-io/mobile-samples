@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:dyte_core/dyte_core.dart';
 import 'package:flutter_core/models/states/participant_event_states.dart';
@@ -51,7 +50,6 @@ class ParticipantNotifier extends StateNotifier<ParticipantEventStates>
   @override
   void onGridUpdated(GridPagesInfo gridInfo) {
     super.onGridUpdated(gridInfo);
-    log(gridInfo.toJson(), name: "gridInfo");
     state = ParticipantEventStates.onGridUpdated(gridPagesInfo: gridInfo);
   }
 

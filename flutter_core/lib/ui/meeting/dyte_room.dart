@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:dyte_core/dyte_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_core/constants/colors.dart';
@@ -27,11 +25,9 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
   late List<DyteMeetingParticipant> activeParticipants = [];
   GridPagesInfo? gridPagesInfo;
   late DyteRecordingState recordingState = DyteRecordingState.idle;
-  late List<DyteMeetingParticipant> _activeParticipants;
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     ref.listen<LocalUserEventStates>(localUserProvider, (previous, next) {
       next.maybeMap(
           onMeetingRoomJoinStarted: (value) async {
@@ -48,7 +44,7 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
           recordingState = await ref.watch(dyteClient).recording.recordingState;
           setState(() {});
         },
-        onMeetingRoomLeaveStarted: (value) => log("LEAVING ROOM..."),
+        onMeetingRoomLeaveStarted: (value) {},
         onMeetingRoomLeft: (value) => Navigator.pushAndRemoveUntil(
           context,
           MaterialPageRoute(
@@ -59,30 +55,15 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
         orElse: () {},
       );
     });
-    // ref.listen<PluginEventStates>(pluginEventStateNotifierProvider,
-    //     (previous, next) {
-    //   next.maybeMap(
-    //     onPluginActivated: (value) {},
-    //     onPluginDeactivated: (value) {},
-    //     onPluginFileRequest: (value) {},
-    //     onPluginMessage: (value) {},
-    //     orElse: () {},
-    //   );
-    // });
+
     ref.listen<ParticipantEventStates>(participantEventStateNotifierProvider,
         (_, next) {
       next.maybeMap(
-        onActiveParticipantsChanged: (res) {
-          _activeParticipants = res.activeParticipants;
-          setState(() {});
-        },
-        orElse: () {
-          print("ORELSE is CALLED");
-        },
         onGridUpdated: (res) {
           gridPagesInfo = res.gridPagesInfo;
           setState(() {});
         },
+        orElse: () {},
       );
     });
 
@@ -90,32 +71,6 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
       appBar: DyteAppBar(
         action: Row(
           children: [
-            // IconButton(
-            //   onPressed: () {
-            //     _isPrevPagePossible
-            //         ? ref.watch(dyteClient).setPage(_currentPage - 1)
-            //         : null;
-            //   },
-            //   icon: Icon(
-            //     Icons.arrow_back_ios_rounded,
-            //     color: _isPrevPagePossible ? Colors.white : Colors.grey,
-            //   ),
-            // ),
-            // IconButton(
-            //   onPressed: () {
-            //     print(
-            //         "IS NEXT PAGE POSSIBLE: $_isNextPagePossible, $_pageCount");
-            //     log("IS NEXT PAGE POSSIBLE: $_isNextPagePossible, $_pageCount");
-            //     _isNextPagePossible
-            //         ? ref.watch(dyteClient).setPage(_currentPage + 1)
-            //         : null;
-            //   },
-            //   icon: Icon(
-            //     Icons.arrow_forward_ios_rounded,
-            //     color: _isNextPagePossible ? Colors.white : Colors.grey,
-            //   ),
-            // ),
-
             IconButton(
               onPressed: () {
                 if (gridPagesInfo != null) {
@@ -154,11 +109,13 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
               onPressed: () async {
                 List<DytePlugin> plugins =
                     await ref.watch(dyteClient).plugins.all;
-                Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => PluginsScreen(plugins: plugins),
-                    ));
+                if (mounted) {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PluginsScreen(plugins: plugins),
+                      ));
+                }
               },
               icon: const Icon(
                 Icons.rocket_launch_outlined,
@@ -201,58 +158,6 @@ class _DyteRoomState extends ConsumerState<DyteRoom> {
       ),
       bottomNavigationBar: const DyteCallBottomBar(),
       body: const RenderActiveParticipants(),
-      // _renderMeetingViewStreamBuilder(size),
-    );
-  }
-
-  Widget _renderMeetingViewStreamBuilder(Size size) {
-    return StreamBuilder<DyteRoomParticipants>(
-      stream: ref.read(dyteClient).participantsStream,
-      initialData: ref.watch(dyteClient).participants,
-      builder: (context, snapshot) {
-        final data = snapshot.data;
-        if (data != null) {
-          return Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Participants: ${data.joined.length}',
-                style: const TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 18,
-                ),
-              ),
-              const SizedBox(height: 10),
-              SizedBox(
-                height: size.height * .75,
-                // child: _renderVideoGrid(data.active),
-                child: _renderVideoGrid(data.active),
-              ),
-              // const Spacer(),
-            ],
-          );
-        }
-        return const Center(
-          child: CircularProgressIndicator(),
-        );
-      },
-    );
-  }
-
-  Widget _renderVideoGrid(List<DyteMeetingParticipant> participants) {
-    return GridView(
-      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-        crossAxisCount: 2,
-        childAspectRatio: 1,
-        crossAxisSpacing: 10,
-        mainAxisSpacing: 10,
-        mainAxisExtent: 200,
-      ),
-      children: participants.map((e) {
-        return VideoView(meetingParticipant: e);
-      }).toList(),
     );
   }
 }

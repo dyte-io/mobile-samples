@@ -1,4 +1,3 @@
-import 'dart:developer';
 
 import 'package:dyte_core/dyte_core.dart';
 import 'package:flutter/material.dart';
@@ -24,7 +23,6 @@ class _SettingsScreenState extends ConsumerState<SettingsScreen> {
           .localUser
           .getSelectedAudioDevice()
           .then((value) => setState(() {
-                log(value.toJson());
                 _currentAudioDevice = value.type;
               }));
       ref
