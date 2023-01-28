@@ -46,7 +46,7 @@ dependencies {
 
   implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
 
-  implementation 'io.dyte:core:1.9.0-staging.10'
+  implementation 'io.dyte:core:1.10.1'
 
   testImplementation 'junit:junit:4.13.2'
   androidTestImplementation 'androidx.test.ext:junit:1.1.3'
