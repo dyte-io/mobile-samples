@@ -1,0 +1,7 @@
+const baseUrl = 'https://api.cluster.dyte.in/v1';
+const apiKey = '28786006e82a9c00adf9';
+const orgId = '20d43e28-fb36-4e7e-a71d-bb14e1cbc8bf';
+const authToken =
+    'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImUyYjdiM2I5LTFmYTQtNDM0My1hMjZkLTc3Y2JlZTg0MDlmMiIsImxvZ2dlZEluIjp0cnVlLCJpYXQiOjE2NzM1NDUxMjYsImV4cCI6MTY4MjE4NTEyNn0.WmdZ0e0L3aGRJ3KE349pb7W260KWSCSz1TAgi9zM3EXw-tNKXVeDS4P6kXISOk9OVGWYO5Nql3rlqGgI5i9LUXOgNDcK70ymOXQNQ96BYKYM6HqBjves3U75OzVpPwRwZLmJTRkiEx7uyp-9Pxhb2l9SPm8xNoOcEOJ52jfO_b8Oe0QSADWij8XIhfOM7XBO7IutvAIC9D_0mIEfkvB1CqWd8f-irx_LHDlqlAxVYt9EHlu8lpG230z8nkwlyUuA3AFt7fsInYrpi1Qewa3i4fwahwXP65JGMwXXQeThuIndqKvUPK135z3JLt57xVILqHugjfBBe-iKFxV5oKFbiQ';
+
+const meetingRoomName = 'cqahpw-jigbmq';
