@@ -23,14 +23,14 @@ class ViewController: UIViewController {
         meetingSetupViewModel.meetingSetupDelegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
-        meetingCodeTextField.text = Constants.MEETING_ROOM_NAME
+        //meetingCodeTextField.text = Constants.MEETING_ROOM_NAME
     }
     
     @IBAction func joinMeeting(_ sender: Any) {
         meetingCodeTextField.resignFirstResponder()
         self.view.showActivityIndicator()
-        goToMeetingRoom(authToken: Constants.AUTH_TOKEN)
-//        self.meetingSetupViewModel.joinCreatedMeeting(displayName: self.joinUserNameTextField.text, meetingID: meetingCodeTextField.text)
+//        goToMeetingRoom(authToken: Constants.AUTH_TOKEN)
+        self.meetingSetupViewModel.joinCreatedMeeting(displayName: self.joinUserNameTextField.text, meetingID: meetingCodeTextField.text)
     }
     
     
@@ -62,9 +62,8 @@ class ViewController: UIViewController {
 
 extension ViewController: MeetingSetupDelegate {
     func createParticipantSuccess(authToken: String, meetingID: String) {
-        let message = "meeting link is copied on clipboard, share it!"
+        let message = "Meeting link is copied on clipboard, share it!"
         UIPasteboard.general.string = "https://app.dyte.io/v2/meeting?id=\(meetingID)"
-        
         let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
         self.present(alert, animated: true)
             

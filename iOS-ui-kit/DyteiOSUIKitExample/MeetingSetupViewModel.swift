@@ -43,7 +43,7 @@ final class MeetingSetupViewModel {
             self?.meetingSetupDelegate?.hideActivityIndicator()
             self?.createParticipantResponse = response
             if let authToken = response.data?.token {
-                self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: response.data?.id ?? "")
+                self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID ?? "")
             } else {
                 print("Error: missing authToken: \(response.data?.token ?? "")")
             }
