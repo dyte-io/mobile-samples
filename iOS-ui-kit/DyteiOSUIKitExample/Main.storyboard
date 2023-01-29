@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sp8-za-Xj0">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="t6n-w4-Na6">
+            <objects>
+                <viewController storyboardIdentifier="main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sp8-za-Xj0" customClass="ViewController" customModule="DyteiOSUIKitExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AAD-aa-beR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dyte-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="bd7-xz-5eZ">
+                                <rect key="frame" x="171.66666666666666" y="84" width="50" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="0Aw-PM-yfk"/>
+                                    <constraint firstAttribute="height" constant="20" id="Q3Q-a2-WeW"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eb-eT-pzZ">
+                                <rect key="frame" x="0.0" y="129" width="393" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="z2I-Qa-9qs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pex-tM-Kv0">
+                                <rect key="frame" x="0.0" y="392" width="393" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="w0h-dL-rMh"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Meeting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNs-Es-PCD">
+                                <rect key="frame" x="25" y="155" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Join Meeting" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbu-5t-kyw">
+                                <rect key="frame" x="25" y="418" width="343" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Meeting Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YE1-mN-gYG">
+                                <rect key="frame" x="25" y="204" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QnJ-Fb-BMt">
+                                <rect key="frame" x="25" y="258" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Meeting Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ick-cY-kwN">
+                                <rect key="frame" x="25" y="467" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMr-g1-p3f">
+                                <rect key="frame" x="96.666666666666686" y="312" width="200" height="30"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LGr-ER-Tgq"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start Meeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="startMeeting:" destination="sp8-za-Xj0" eventType="touchUpInside" id="Cfy-uN-hOR"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="ZBj-ZV-b2d">
+                                <rect key="frame" x="25" y="372" width="343" height="10"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="lmu-5l-sot"/>
+                                </constraints>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8mT-uL-jua">
+                                <rect key="frame" x="25" y="521" width="343" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-Er-QFh">
+                                <rect key="frame" x="96.666666666666686" y="575" width="200" height="30"/>
+                                <color key="backgroundColor" systemColor="tintColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="U2E-S5-CfJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Join Meeting">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="joinMeeting:" destination="sp8-za-Xj0" eventType="touchUpInside" id="DxG-qY-yD4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Xfv-hJ-CWT"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wz8-Er-QFh" firstAttribute="top" secondItem="8mT-uL-jua" secondAttribute="bottom" constant="20" id="3dK-H1-TZR"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="fbu-5t-kyw" secondAttribute="trailing" constant="25" id="7Aj-n0-Gvf"/>
+                            <constraint firstItem="ick-cY-kwN" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="AHz-BK-d9Y"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="ick-cY-kwN" secondAttribute="trailing" constant="25" id="Bkl-7b-CxU"/>
+                            <constraint firstItem="yMr-g1-p3f" firstAttribute="centerX" secondItem="AAD-aa-beR" secondAttribute="centerX" id="FYU-ZJ-Wjq"/>
+                            <constraint firstItem="bd7-xz-5eZ" firstAttribute="centerX" secondItem="AAD-aa-beR" secondAttribute="centerX" id="Gt3-1x-wrp"/>
+                            <constraint firstItem="8mT-uL-jua" firstAttribute="top" secondItem="ick-cY-kwN" secondAttribute="bottom" constant="20" id="I4Q-Jp-HOT"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="5eb-eT-pzZ" secondAttribute="trailing" id="OE8-kP-TJa"/>
+                            <constraint firstItem="yMr-g1-p3f" firstAttribute="top" secondItem="QnJ-Fb-BMt" secondAttribute="bottom" constant="20" id="OeD-21-qrh"/>
+                            <constraint firstItem="ZBj-ZV-b2d" firstAttribute="top" secondItem="yMr-g1-p3f" secondAttribute="bottom" constant="30" id="R3A-Ec-PrV"/>
+                            <constraint firstItem="QnJ-Fb-BMt" firstAttribute="top" secondItem="YE1-mN-gYG" secondAttribute="bottom" constant="20" id="S4o-uq-9wN"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="QnJ-Fb-BMt" secondAttribute="trailing" constant="25" id="T0w-On-lhR"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="8mT-uL-jua" secondAttribute="trailing" constant="25" id="Vvg-FC-IfO"/>
+                            <constraint firstItem="ick-cY-kwN" firstAttribute="top" secondItem="fbu-5t-kyw" secondAttribute="bottom" constant="25" id="YTh-MJ-5gJ"/>
+                            <constraint firstItem="pex-tM-Kv0" firstAttribute="leading" secondItem="AAD-aa-beR" secondAttribute="leading" id="ZaU-zH-ESY"/>
+                            <constraint firstItem="nNs-Es-PCD" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="aOL-jC-nQE"/>
+                            <constraint firstItem="bd7-xz-5eZ" firstAttribute="top" secondItem="Xfv-hJ-CWT" secondAttribute="top" constant="25" id="aQS-hI-L2v"/>
+                            <constraint firstAttribute="trailing" secondItem="pex-tM-Kv0" secondAttribute="trailing" id="byI-yn-oJY"/>
+                            <constraint firstItem="fbu-5t-kyw" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="dND-Tk-AAM"/>
+                            <constraint firstItem="8mT-uL-jua" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="elI-tr-i7b"/>
+                            <constraint firstItem="fbu-5t-kyw" firstAttribute="top" secondItem="pex-tM-Kv0" secondAttribute="bottom" constant="25" id="fmk-rV-fAp"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="nNs-Es-PCD" secondAttribute="trailing" constant="25" id="gBx-Mg-Myy"/>
+                            <constraint firstItem="YE1-mN-gYG" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="gpO-Y6-DAF"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="ZBj-ZV-b2d" secondAttribute="trailing" constant="25" id="j6Z-Ym-PEN"/>
+                            <constraint firstItem="ZBj-ZV-b2d" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="jah-X1-zAH"/>
+                            <constraint firstItem="pex-tM-Kv0" firstAttribute="top" secondItem="ZBj-ZV-b2d" secondAttribute="bottom" constant="10" id="jwF-PO-FjV"/>
+                            <constraint firstItem="YE1-mN-gYG" firstAttribute="top" secondItem="nNs-Es-PCD" secondAttribute="bottom" constant="25" id="k14-pa-joP"/>
+                            <constraint firstItem="QnJ-Fb-BMt" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" constant="25" id="kQJ-5W-dSt"/>
+                            <constraint firstItem="Xfv-hJ-CWT" firstAttribute="trailing" secondItem="YE1-mN-gYG" secondAttribute="trailing" constant="25" id="kUp-Zf-2ct"/>
+                            <constraint firstItem="5eb-eT-pzZ" firstAttribute="leading" secondItem="Xfv-hJ-CWT" secondAttribute="leading" id="plu-OI-Ej0"/>
+                            <constraint firstItem="wz8-Er-QFh" firstAttribute="centerX" secondItem="AAD-aa-beR" secondAttribute="centerX" id="t7t-tD-d8S"/>
+                            <constraint firstItem="5eb-eT-pzZ" firstAttribute="top" secondItem="bd7-xz-5eZ" secondAttribute="bottom" constant="25" id="uZU-jo-sV9"/>
+                            <constraint firstItem="nNs-Es-PCD" firstAttribute="top" secondItem="5eb-eT-pzZ" secondAttribute="bottom" constant="25" id="yWD-4O-zWB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="dTh-m5-B2k"/>
+                    <connections>
+                        <outlet property="joinUserNameTextField" destination="8mT-uL-jua" id="dA3-pE-XDu"/>
+                        <outlet property="meetingCodeTextField" destination="ick-cY-kwN" id="mvh-8R-JmX"/>
+                        <outlet property="meetingNameTextField" destination="YE1-mN-gYG" id="092-b2-peo"/>
+                        <outlet property="userNameTextField" destination="QnJ-Fb-BMt" id="1o1-QC-BGM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zoJ-gQ-4yg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="329" y="-9"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dyte-Logo" width="100" height="40"/>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

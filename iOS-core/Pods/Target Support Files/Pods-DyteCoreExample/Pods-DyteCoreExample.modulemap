@@ -1,0 +1,6 @@
+framework module Pods_DyteCoreExample {
+  umbrella header "Pods-DyteCoreExample-umbrella.h"
+
+  export *
+  module * { export * }
+}

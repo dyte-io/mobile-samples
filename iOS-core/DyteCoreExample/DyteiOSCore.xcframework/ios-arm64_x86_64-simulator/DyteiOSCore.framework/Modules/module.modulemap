@@ -1,0 +1,6 @@
+framework module DyteiOSCore {
+    umbrella header "DyteiOSCore.h"
+
+    export *
+    module * { export * }
+}

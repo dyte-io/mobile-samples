@@ -1,0 +1,6 @@
+framework module DyteiOSSocketIO {
+  umbrella header "DyteiOSSocketIO-umbrella.h"
+
+  export *
+  module * { export * }
+}

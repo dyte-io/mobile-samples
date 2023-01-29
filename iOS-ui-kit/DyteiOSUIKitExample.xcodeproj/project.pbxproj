@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA879BAC298597CE00E5D965 /* Starscream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BAB298597CE00E5D965 /* Starscream.framework */; };
+		AA879BAD298597CE00E5D965 /* Starscream.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BAB298597CE00E5D965 /* Starscream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA879BAF298597D800E5D965 /* DyteiOSSocketIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BAE298597D800E5D965 /* DyteiOSSocketIO.framework */; };
+		AA879BB0298597D800E5D965 /* DyteiOSSocketIO.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BAE298597D800E5D965 /* DyteiOSSocketIO.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA879BB629859E4F00E5D965 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB529859E4F00E5D965 /* WebRTC.framework */; };
+		AA879BB729859E4F00E5D965 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB529859E4F00E5D965 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; };
+		AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AA879BC22985B03100E5D965 /* DyteiOSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BC12985B03100E5D965 /* DyteiOSCore.framework */; };
+		AA879BC32985B03100E5D965 /* DyteiOSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BC12985B03100E5D965 /* DyteiOSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD111F312986B59B0053AA1F /* DyteUiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB229859C5700E5D965 /* DyteUiKit.framework */; };
+		BD111F322986B59B0053AA1F /* DyteUiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB229859C5700E5D965 /* DyteUiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BDB77EED2983AC8E00CACD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */; };
+		BDB77EEF2983AC8E00CACD4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */; };
+		BDB77EF12983AC8E00CACD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EF02983AC8E00CACD4B /* ViewController.swift */; };
+		BDB77EF92983AC8F00CACD4B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB77EF72983AC8F00CACD4B /* LaunchScreen.storyboard */; };
+		BDB77F0F2983B0CE00CACD4B /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77F0C2983B0CE00CACD4B /* ApiService.swift */; };
+		BDB77F102983B0CE00CACD4B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77F0D2983B0CE00CACD4B /* NetworkManager.swift */; };
+		BDB77F112983B0CE00CACD4B /* MeetingSetupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77F0E2983B0CE00CACD4B /* MeetingSetupViewModel.swift */; };
+		BDB77F132983B0F500CACD4B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77F122983B0F500CACD4B /* Constants.swift */; };
+		BDB77F152983B13600CACD4B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77F142983B13600CACD4B /* Utils.swift */; };
+		BDB77F172983B29D00CACD4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDB77F162983B29D00CACD4B /* Main.storyboard */; };
+		BDB77F192983B2D300CACD4B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDB77F182983B2D300CACD4B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AA879BA72985974700E5D965 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AA879BAD298597CE00E5D965 /* Starscream.framework in Embed Frameworks */,
+				AA879BB0298597D800E5D965 /* DyteiOSSocketIO.framework in Embed Frameworks */,
+				AA879BC32985B03100E5D965 /* DyteiOSCore.framework in Embed Frameworks */,
+				AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */,
+				AA879BB729859E4F00E5D965 /* WebRTC.framework in Embed Frameworks */,
+				BD111F322986B59B0053AA1F /* DyteUiKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AA879BAB298597CE00E5D965 /* Starscream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Starscream.framework; path = DyteiOSUIKitExample/Starscream/Starscream.framework; sourceTree = "<group>"; };
+		AA879BAE298597D800E5D965 /* DyteiOSSocketIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteiOSSocketIO.framework; path = DyteiOSUIKitExample/DyteiOSSocketIO/DyteiOSSocketIO.framework; sourceTree = "<group>"; };
+		AA879BB229859C5700E5D965 /* DyteUiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteUiKit.framework; path = DyteiOSUIKitExample/DyteUiKit.framework; sourceTree = "<group>"; };
+		AA879BB529859E4F00E5D965 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = DyteiOSUIKitExample/WebRTC.framework; sourceTree = "<group>"; };
+		AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mediasoup_client_ios.framework; path = DyteiOSUIKitExample/mediasoup_client_ios.framework; sourceTree = "<group>"; };
+		AA879BC12985B03100E5D965 /* DyteiOSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteiOSCore.framework; path = DyteiOSUIKitExample/DyteiOSCore.framework; sourceTree = "<group>"; };
+		BDB77EE92983AC8E00CACD4B /* DyteiOSUIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyteiOSUIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BDB77EF02983AC8E00CACD4B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDB77EF82983AC8F00CACD4B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDB77EFA2983AC8F00CACD4B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDB77F0C2983B0CE00CACD4B /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		BDB77F0D2983B0CE00CACD4B /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		BDB77F0E2983B0CE00CACD4B /* MeetingSetupViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingSetupViewModel.swift; sourceTree = "<group>"; };
+		BDB77F122983B0F500CACD4B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BDB77F142983B13600CACD4B /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		BDB77F162983B29D00CACD4B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		BDB77F182983B2D300CACD4B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDB77EE62983AC8E00CACD4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA879BAC298597CE00E5D965 /* Starscream.framework in Frameworks */,
+				AA879BAF298597D800E5D965 /* DyteiOSSocketIO.framework in Frameworks */,
+				AA879BC22985B03100E5D965 /* DyteiOSCore.framework in Frameworks */,
+				AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */,
+				AA879BB629859E4F00E5D965 /* WebRTC.framework in Frameworks */,
+				BD111F312986B59B0053AA1F /* DyteUiKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA879BA32985974700E5D965 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA879BC12985B03100E5D965 /* DyteiOSCore.framework */,
+				AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */,
+				AA879BB529859E4F00E5D965 /* WebRTC.framework */,
+				AA879BB229859C5700E5D965 /* DyteUiKit.framework */,
+				AA879BAE298597D800E5D965 /* DyteiOSSocketIO.framework */,
+				AA879BAB298597CE00E5D965 /* Starscream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BDB77EE02983AC8E00CACD4B = {
+			isa = PBXGroup;
+			children = (
+				BDB77EEB2983AC8E00CACD4B /* DyteiOSUIKitExample */,
+				BDB77EEA2983AC8E00CACD4B /* Products */,
+				AA879BA32985974700E5D965 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BDB77EEA2983AC8E00CACD4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDB77EE92983AC8E00CACD4B /* DyteiOSUIKitExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDB77EEB2983AC8E00CACD4B /* DyteiOSUIKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */,
+				BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */,
+				BDB77EF02983AC8E00CACD4B /* ViewController.swift */,
+				BDB77F142983B13600CACD4B /* Utils.swift */,
+				BDB77F122983B0F500CACD4B /* Constants.swift */,
+				BDB77F0C2983B0CE00CACD4B /* ApiService.swift */,
+				BDB77F0E2983B0CE00CACD4B /* MeetingSetupViewModel.swift */,
+				BDB77F0D2983B0CE00CACD4B /* NetworkManager.swift */,
+				BDB77F162983B29D00CACD4B /* Main.storyboard */,
+				BDB77F182983B2D300CACD4B /* Assets.xcassets */,
+				BDB77EF72983AC8F00CACD4B /* LaunchScreen.storyboard */,
+				BDB77EFA2983AC8F00CACD4B /* Info.plist */,
+			);
+			path = DyteiOSUIKitExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDB77EE82983AC8E00CACD4B /* DyteiOSUIKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDB77EFD2983AC8F00CACD4B /* Build configuration list for PBXNativeTarget "DyteiOSUIKitExample" */;
+			buildPhases = (
+				BDB77EE52983AC8E00CACD4B /* Sources */,
+				BDB77EE62983AC8E00CACD4B /* Frameworks */,
+				BDB77EE72983AC8E00CACD4B /* Resources */,
+				AA879BA72985974700E5D965 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DyteiOSUIKitExample;
+			productName = DyteiOSUIKitExample;
+			productReference = BDB77EE92983AC8E00CACD4B /* DyteiOSUIKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDB77EE12983AC8E00CACD4B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					BDB77EE82983AC8E00CACD4B = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+				};
+			};
+			buildConfigurationList = BDB77EE42983AC8E00CACD4B /* Build configuration list for PBXProject "DyteiOSUIKitExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDB77EE02983AC8E00CACD4B;
+			productRefGroup = BDB77EEA2983AC8E00CACD4B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB77EE82983AC8E00CACD4B /* DyteiOSUIKitExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDB77EE72983AC8E00CACD4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB77F172983B29D00CACD4B /* Main.storyboard in Resources */,
+				BDB77F192983B2D300CACD4B /* Assets.xcassets in Resources */,
+				BDB77EF92983AC8F00CACD4B /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDB77EE52983AC8E00CACD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDB77EF12983AC8E00CACD4B /* ViewController.swift in Sources */,
+				BDB77EED2983AC8E00CACD4B /* AppDelegate.swift in Sources */,
+				BDB77F112983B0CE00CACD4B /* MeetingSetupViewModel.swift in Sources */,
+				BDB77F102983B0CE00CACD4B /* NetworkManager.swift in Sources */,
+				BDB77F132983B0F500CACD4B /* Constants.swift in Sources */,
+				BDB77F0F2983B0CE00CACD4B /* ApiService.swift in Sources */,
+				BDB77EEF2983AC8E00CACD4B /* SceneDelegate.swift in Sources */,
+				BDB77F152983B13600CACD4B /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BDB77EF72983AC8F00CACD4B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDB77EF82983AC8F00CACD4B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDB77EFB2983AC8F00CACD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDB77EFC2983AC8F00CACD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDB77EFE2983AC8F00CACD4B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = QVRMZNCH5A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample/Starscream",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample/DyteiOSSocketIO",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DyteiOSUIKitExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dyte;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dyte needs camera permission for Dyte meeting";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dyte needs microphone permission for Dyte meeting";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dyte.dyteDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BDB77EFF2983AC8F00CACD4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = QVRMZNCH5A;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample/Starscream",
+					"$(PROJECT_DIR)/DyteiOSUIKitExample/DyteiOSSocketIO",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DyteiOSUIKitExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Dyte;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Dyte needs camera permission for Dyte meeting";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dyte needs microphone permission for Dyte meeting";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.12;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dyte.dyteDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDB77EE42983AC8E00CACD4B /* Build configuration list for PBXProject "DyteiOSUIKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB77EFB2983AC8F00CACD4B /* Debug */,
+				BDB77EFC2983AC8F00CACD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDB77EFD2983AC8F00CACD4B /* Build configuration list for PBXNativeTarget "DyteiOSUIKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDB77EFE2983AC8F00CACD4B /* Debug */,
+				BDB77EFF2983AC8F00CACD4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDB77EE12983AC8E00CACD4B /* Project object */;
+}

@@ -1,0 +1,11 @@
+framework module DyteiOSSocketIO {
+  umbrella header "DyteiOSSocketIO-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module DyteiOSSocketIO.Swift {
+  header "DyteiOSSocketIO-Swift.h"
+  requires objc
+}

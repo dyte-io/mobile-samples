@@ -1,0 +1,28 @@
+PODS:
+  - DyteiOSCore (0.1.0):
+    - DyteiOSSocketIO
+    - mediasoup_ios_client
+  - DyteiOSSocketIO (0.0.1):
+    - Starscream (~> 4.0.4)
+  - mediasoup_ios_client (1.5.4)
+  - Starscream (4.0.4)
+
+DEPENDENCIES:
+  - DyteiOSCore (= 0.1.0)
+
+SPEC REPOS:
+  trunk:
+    - DyteiOSCore
+    - DyteiOSSocketIO
+    - mediasoup_ios_client
+    - Starscream
+
+SPEC CHECKSUMS:
+  DyteiOSCore: 2382c847b1e74037ce0493c9b23524460a8553ac
+  DyteiOSSocketIO: 1ffed38817cb6e3f91a5e389e14845953b08609c
+  mediasoup_ios_client: b7ff4fe25cf2069cfa04a63690b0cdcdd4a4822c
+  Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
+
+PODFILE CHECKSUM: 3d9ef7f715ca589cb8ff15e4205b3e1ab0826151
+
+COCOAPODS: 1.11.3

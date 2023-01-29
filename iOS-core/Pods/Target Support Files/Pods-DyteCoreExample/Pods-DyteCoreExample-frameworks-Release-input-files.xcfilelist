@@ -1,0 +1,6 @@
+${PODS_ROOT}/Target Support Files/Pods-DyteCoreExample/Pods-DyteCoreExample-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DyteiOSSocketIO/DyteiOSSocketIO.framework
+${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
+${PODS_ROOT}/mediasoup_ios_client/build/mediasoup_client_ios.framework
+${PODS_ROOT}/mediasoup_ios_client/mediasoup-client-ios/dependencies/webrtc/src/out_ios_libs/WebRTC.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/DyteiOSCore/DyteiOSCore.framework/DyteiOSCore

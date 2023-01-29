@@ -1,0 +1,11 @@
+framework module DyteUiKit {
+  umbrella header "DyteUiKit.h"
+
+  export *
+  module * { export * }
+}
+
+module DyteUiKit.Swift {
+  header "DyteUiKit-Swift.h"
+  requires objc
+}
