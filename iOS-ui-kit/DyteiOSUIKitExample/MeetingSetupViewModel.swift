@@ -32,18 +32,18 @@ final class MeetingSetupViewModel {
         }
     }
     
-    func joinCreatedMeeting(displayName: String?, meetingID: String?) {
+    func joinCreatedMeeting(displayName: String, meetingID: String) {
         
         let req = CreateParticipantRequest(
             client_specific_id: Constants.UUID,
-            name: displayName ?? "",
+            name: displayName,
             preset_name: "PH_demo", picture: "")
         
         ApiService().createParticipant(meetingId: meetingID, createParticipantRequest: req, success: { [weak self] response in
             self?.meetingSetupDelegate?.hideActivityIndicator()
             self?.createParticipantResponse = response
             if let authToken = response.data?.token {
-                self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID ?? "")
+                self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID)
             } else {
                 print("Error: missing authToken: \(response.data?.token ?? "")")
             }

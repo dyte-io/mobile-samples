@@ -17,6 +17,10 @@ import _StringProcessing
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc deinit
 }
+extension DyteUiKit.MeetingViewController : UIKit.UIScrollViewDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndDecelerating(_ scrollView: UIKit.UIScrollView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func scrollViewDidEndScrollingAnimation(_ scrollView: UIKit.UIScrollView)
+}
 @_hasMissingDesignatedInitializers public class ImageProvider {
   public static func image(named: Swift.String) -> UIKit.UIImage?
   @objc deinit
@@ -112,11 +116,15 @@ public protocol NameTagDesignDependency {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SetupViewController : UIKit.UIViewController {
-  @_Concurrency.MainActor(unsafe) public init(authtoken: Swift.String, baseUrl: Swift.String? = nil, completion: @escaping () -> Swift.Void)
+  @_Concurrency.MainActor(unsafe) public init(meetingInfo: DyteiOSCore.DyteMeetingInfoV2, mobileClient: DyteiOSCore.DyteMobileClient, baseUrl: Swift.String? = nil, completion: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
   @objc deinit
+}
+extension DyteUiKit.SetupViewController {
+  @_Concurrency.MainActor(unsafe) public func loadSelfVideoView(isEnabled: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) public func setTag(name: Swift.String)
 }
 extension DyteUiKit.SetupViewController : UIKit.UITextFieldDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
@@ -409,12 +417,20 @@ extension UIKit.UIStackView {
   @_Concurrency.MainActor(unsafe) public init(style: DyteUiKit.DyteButtonAtom.Style = .solid, dyteButtonState: DyteUiKit.DyteButtonAtom.States = .active, size: DyteUiKit.DyteButtonAtom.Size = .large)
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class DyteUiKitEngine {
+  public static let shared: DyteUiKit.DyteUiKitEngine
+  final public let mobileClient: DyteiOSCore.DyteMobileClient
+  public class func setup(_ config: DyteiOSCore.DyteMeetingInfoV2)
+  public func getInitialController(completion: @escaping () -> Swift.Void) -> DyteUiKit.SetupViewController
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class VideoPeerViewModel {
   public var nameInitialsUpdate: ((_ name: Swift.String) -> Swift.Void)?
   public var videoUpdate: ((_ enabled: Swift.Bool, _ participant: DyteiOSCore.DyteMeetingParticipant) -> Swift.Void)?
   public var audioUpdate: ((_ enabled: Swift.Bool, _ participant: DyteiOSCore.DyteMeetingParticipant) -> Swift.Void)?
   public var nameUpdate: ((_ name: Swift.String) -> Swift.Void)?
   public func setInitialName(name: Swift.String)
+  public func setNameTag(name: Swift.String)
   public func setPartcipant(participant: DyteiOSCore.DyteMeetingParticipant)
   @objc deinit
 }

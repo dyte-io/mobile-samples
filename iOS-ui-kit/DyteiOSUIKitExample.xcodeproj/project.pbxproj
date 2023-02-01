@@ -15,10 +15,10 @@
 		AA879BB729859E4F00E5D965 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB529859E4F00E5D965 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; };
 		AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AA879BC22985B03100E5D965 /* DyteiOSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BC12985B03100E5D965 /* DyteiOSCore.framework */; };
-		AA879BC32985B03100E5D965 /* DyteiOSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BC12985B03100E5D965 /* DyteiOSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BD111F312986B59B0053AA1F /* DyteUiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB229859C5700E5D965 /* DyteUiKit.framework */; };
 		BD111F322986B59B0053AA1F /* DyteUiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB229859C5700E5D965 /* DyteUiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD111F49298A98710053AA1F /* DyteiOSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD111F48298A98700053AA1F /* DyteiOSCore.framework */; };
+		BD111F4A298A98710053AA1F /* DyteiOSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD111F48298A98700053AA1F /* DyteiOSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BDB77EED2983AC8E00CACD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */; };
 		BDB77EEF2983AC8E00CACD4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */; };
 		BDB77EF12983AC8E00CACD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EF02983AC8E00CACD4B /* ViewController.swift */; };
@@ -41,8 +41,8 @@
 			files = (
 				AA879BAD298597CE00E5D965 /* Starscream.framework in Embed Frameworks */,
 				AA879BB0298597D800E5D965 /* DyteiOSSocketIO.framework in Embed Frameworks */,
-				AA879BC32985B03100E5D965 /* DyteiOSCore.framework in Embed Frameworks */,
 				AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */,
+				BD111F4A298A98710053AA1F /* DyteiOSCore.framework in Embed Frameworks */,
 				AA879BB729859E4F00E5D965 /* WebRTC.framework in Embed Frameworks */,
 				BD111F322986B59B0053AA1F /* DyteUiKit.framework in Embed Frameworks */,
 			);
@@ -57,7 +57,8 @@
 		AA879BB229859C5700E5D965 /* DyteUiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteUiKit.framework; path = DyteiOSUIKitExample/DyteUiKit.framework; sourceTree = "<group>"; };
 		AA879BB529859E4F00E5D965 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = DyteiOSUIKitExample/WebRTC.framework; sourceTree = "<group>"; };
 		AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mediasoup_client_ios.framework; path = DyteiOSUIKitExample/mediasoup_client_ios.framework; sourceTree = "<group>"; };
-		AA879BC12985B03100E5D965 /* DyteiOSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteiOSCore.framework; path = DyteiOSUIKitExample/DyteiOSCore.framework; sourceTree = "<group>"; };
+		BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DyteiOSCore.xcframework; path = DyteiOSUIKitExample/DyteiOSCore.xcframework; sourceTree = "<group>"; };
+		BD111F48298A98700053AA1F /* DyteiOSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteiOSCore.framework; path = DyteiOSUIKitExample/DyteiOSCore.framework; sourceTree = "<group>"; };
 		BDB77EE92983AC8E00CACD4B /* DyteiOSUIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyteiOSUIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +81,8 @@
 			files = (
 				AA879BAC298597CE00E5D965 /* Starscream.framework in Frameworks */,
 				AA879BAF298597D800E5D965 /* DyteiOSSocketIO.framework in Frameworks */,
-				AA879BC22985B03100E5D965 /* DyteiOSCore.framework in Frameworks */,
 				AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */,
+				BD111F49298A98710053AA1F /* DyteiOSCore.framework in Frameworks */,
 				AA879BB629859E4F00E5D965 /* WebRTC.framework in Frameworks */,
 				BD111F312986B59B0053AA1F /* DyteUiKit.framework in Frameworks */,
 			);
@@ -93,7 +94,8 @@
 		AA879BA32985974700E5D965 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA879BC12985B03100E5D965 /* DyteiOSCore.framework */,
+				BD111F48298A98700053AA1F /* DyteiOSCore.framework */,
+				BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */,
 				AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */,
 				AA879BB529859E4F00E5D965 /* WebRTC.framework */,
 				AA879BB229859C5700E5D965 /* DyteUiKit.framework */,
@@ -357,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = QVRMZNCH5A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = QVRMZNCH5A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

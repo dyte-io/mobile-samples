@@ -164,6 +164,68 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndDecelerating",
+            "printedName": "scrollViewDidEndDecelerating(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DyteUiKit@objc(cs)MeetingViewController(im)scrollViewDidEndDecelerating:",
+            "mangledName": "$s9DyteUiKit21MeetingViewControllerC06scrollE18DidEndDeceleratingyySo08UIScrollE0CF",
+            "moduleName": "DyteUiKit",
+            "objc_name": "scrollViewDidEndDecelerating:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "scrollViewDidEndScrollingAnimation",
+            "printedName": "scrollViewDidEndScrollingAnimation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIScrollView",
+                "printedName": "UIKit.UIScrollView",
+                "usr": "c:objc(cs)UIScrollView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@CM@DyteUiKit@objc(cs)MeetingViewController(im)scrollViewDidEndScrollingAnimation:",
+            "mangledName": "$s9DyteUiKit21MeetingViewControllerC06scrollE24DidEndScrollingAnimationyySo08UIScrollE0CF",
+            "moduleName": "DyteUiKit",
+            "objc_name": "scrollViewDidEndScrollingAnimation:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -3538,7 +3600,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(authtoken:baseUrl:completion:)",
+            "printedName": "init(meetingInfo:mobileClient:baseUrl:completion:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3548,9 +3610,15 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "DyteMeetingInfoV2",
+                "printedName": "DyteiOSCore.DyteMeetingInfoV2",
+                "usr": "c:objc(cs)DOSCDyteMeetingInfoV2"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DyteMobileClient",
+                "printedName": "DyteiOSCore.DyteMobileClient",
+                "usr": "c:objc(cs)DOSCDyteMobileClient"
               },
               {
                 "kind": "TypeNominal",
@@ -3586,8 +3654,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:9DyteUiKit19SetupViewControllerC9authtoken7baseUrl10completionACSS_SSSgyyctcfc",
-            "mangledName": "$s9DyteUiKit19SetupViewControllerC9authtoken7baseUrl10completionACSS_SSSgyyctcfc",
+            "usr": "s:9DyteUiKit19SetupViewControllerC11meetingInfo12mobileClient7baseUrl10completionACSo015DOSCDyteMeetingH2V2C_So0n6MobileJ0CSSSgyyctcfc",
+            "mangledName": "$s9DyteUiKit19SetupViewControllerC11meetingInfo12mobileClient7baseUrl10completionACSo015DOSCDyteMeetingH2V2C_So0n6MobileJ0CSSSgyyctcfc",
             "moduleName": "DyteUiKit",
             "declAttributes": [
               "Custom",
@@ -3739,6 +3807,62 @@
               "Override"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "loadSelfVideoView",
+            "printedName": "loadSelfVideoView(isEnabled:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit19SetupViewControllerC013loadSelfVideoE09isEnabledySb_tF",
+            "mangledName": "$s9DyteUiKit19SetupViewControllerC013loadSelfVideoE09isEnabledySb_tF",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setTag",
+            "printedName": "setTag(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit19SetupViewControllerC6setTag4nameySS_tF",
+            "mangledName": "$s9DyteUiKit19SetupViewControllerC6setTag4nameySS_tF",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -14359,6 +14483,203 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DyteUiKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DyteiOSCore",
+        "printedName": "DyteiOSCore",
+        "declKind": "Import",
+        "moduleName": "DyteUiKit"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DyteUiKitEngine",
+        "printedName": "DyteUiKitEngine",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DyteUiKitEngine",
+                "printedName": "DyteUiKit.DyteUiKitEngine",
+                "usr": "s:9DyteUiKit0abC6EngineC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9DyteUiKit0abC6EngineC6sharedACvpZ",
+            "mangledName": "$s9DyteUiKit0abC6EngineC6sharedACvpZ",
+            "moduleName": "DyteUiKit",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DyteUiKitEngine",
+                    "printedName": "DyteUiKit.DyteUiKitEngine",
+                    "usr": "s:9DyteUiKit0abC6EngineC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DyteUiKit0abC6EngineC6sharedACvgZ",
+                "mangledName": "$s9DyteUiKit0abC6EngineC6sharedACvgZ",
+                "moduleName": "DyteUiKit",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "mobileClient",
+            "printedName": "mobileClient",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DyteMobileClient",
+                "printedName": "DyteiOSCore.DyteMobileClient",
+                "usr": "c:objc(cs)DOSCDyteMobileClient"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:9DyteUiKit0abC6EngineC12mobileClientSo014DOSCDyteMobileF0Cvp",
+            "mangledName": "$s9DyteUiKit0abC6EngineC12mobileClientSo014DOSCDyteMobileF0Cvp",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DyteMobileClient",
+                    "printedName": "DyteiOSCore.DyteMobileClient",
+                    "usr": "c:objc(cs)DOSCDyteMobileClient"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:9DyteUiKit0abC6EngineC12mobileClientSo014DOSCDyteMobileF0Cvg",
+                "mangledName": "$s9DyteUiKit0abC6EngineC12mobileClientSo014DOSCDyteMobileF0Cvg",
+                "moduleName": "DyteUiKit",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "setup",
+            "printedName": "setup(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DyteMeetingInfoV2",
+                "printedName": "DyteiOSCore.DyteMeetingInfoV2",
+                "usr": "c:objc(cs)DOSCDyteMeetingInfoV2"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit0abC6EngineC5setupyySo21DOSCDyteMeetingInfoV2CFZ",
+            "mangledName": "$s9DyteUiKit0abC6EngineC5setupyySo21DOSCDyteMeetingInfoV2CFZ",
+            "moduleName": "DyteUiKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getInitialController",
+            "printedName": "getInitialController(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetupViewController",
+                "printedName": "DyteUiKit.SetupViewController",
+                "usr": "c:@M@DyteUiKit@objc(cs)SetupViewController"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit0abC6EngineC20getInitialController10completionAA09SetupViewG0Cyyc_tF",
+            "mangledName": "$s9DyteUiKit0abC6EngineC20getInitialController10completionAA09SetupViewG0Cyyc_tF",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:9DyteUiKit0abC6EngineC",
+        "mangledName": "$s9DyteUiKit0abC6EngineC",
+        "moduleName": "DyteUiKit",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
         "name": "DyteiOSCore",
         "printedName": "DyteiOSCore",
         "declKind": "Import",
@@ -15054,6 +15375,32 @@
             "declKind": "Func",
             "usr": "s:9DyteUiKit18VideoPeerViewModelC14setInitialName4nameySS_tF",
             "mangledName": "$s9DyteUiKit18VideoPeerViewModelC14setInitialName4nameySS_tF",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setNameTag",
+            "printedName": "setNameTag(name:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit18VideoPeerViewModelC10setNameTag4nameySS_tF",
+            "mangledName": "$s9DyteUiKit18VideoPeerViewModelC10setNameTag4nameySS_tF",
             "moduleName": "DyteUiKit",
             "declAttributes": [
               "AccessControl"
@@ -20571,6 +20918,13 @@
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
+      "kind": "BooleanLiteral",
+      "offset": 528,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 21,
@@ -20719,7 +21073,7 @@
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "StringLiteral",
-      "offset": 2731,
+      "offset": 2735,
       "length": 2,
       "value": "\"\""
     },
@@ -20810,70 +21164,70 @@
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 768,
+      "offset": 710,
       "length": 18,
       "value": "\"icon_mic_enabled\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 868,
+      "offset": 810,
       "length": 19,
       "value": "\"icon_mic_disabled\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1081,
+      "offset": 1023,
       "length": 20,
       "value": "\"icon_video_enabled\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1183,
+      "offset": 1125,
       "length": 21,
       "value": "\"icon_video_disabled\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1401,
+      "offset": 1343,
       "length": 14,
       "value": "\"icon_setting\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1551,
+      "offset": 1493,
       "length": 12,
       "value": "\"Join in as\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1689,
-      "length": 15,
-      "value": "\"Join as UIKIT\""
+      "offset": 1645,
+      "length": 18,
+      "value": "\"Insert your name\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1830,
+      "offset": 1790,
       "length": 6,
       "value": "\"Join\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1948,
+      "offset": 1908,
       "length": 19,
       "value": "\"24 people Present\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2749,
+      "offset": 2862,
       "length": 5,
       "value": "false"
     },
@@ -21440,84 +21794,84 @@
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 3785,
+      "offset": 3784,
       "length": 9,
       "value": "\"#050505\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 3851,
+      "offset": 3850,
       "length": 9,
       "value": "\"#0246FD\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 3930,
+      "offset": 3929,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 4000,
+      "offset": 3999,
       "length": 9,
       "value": "\"#111111\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 4073,
+      "offset": 4072,
       "length": 9,
       "value": "\"#FF2D2D\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 4143,
+      "offset": 4142,
       "length": 9,
       "value": "\"#83D017\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
-      "offset": 4213,
+      "offset": 4212,
       "length": 9,
       "value": "\"#FFCD07\""
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
-      "offset": 4279,
+      "offset": 4278,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
-      "offset": 4338,
+      "offset": 4337,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
-      "offset": 4395,
+      "offset": 4394,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
-      "offset": 4451,
+      "offset": 4450,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
-      "offset": 4501,
+      "offset": 4500,
       "length": 3,
       "value": "2.0"
     },
@@ -21782,6 +22136,13 @@
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1793,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 10,
@@ -21790,21 +22151,21 @@
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "BooleanLiteral",
-      "offset": 1426,
+      "offset": 1427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "FloatLiteral",
-      "offset": 2936,
+      "offset": 2937,
       "length": 4,
       "value": "48.0"
     },
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "StringLiteral",
-      "offset": 1355,
+      "offset": 1356,
       "length": 14,
       "value": "\"DyteUiKit.DyteButtonAtom\""
     },
@@ -21860,7 +22221,7 @@
     {
       "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteVideoPeerView.swift",
       "kind": "StringLiteral",
-      "offset": 473,
+      "offset": 530,
       "length": 17,
       "value": "\"DyteUiKit.DyteVideoPeerView\""
     },

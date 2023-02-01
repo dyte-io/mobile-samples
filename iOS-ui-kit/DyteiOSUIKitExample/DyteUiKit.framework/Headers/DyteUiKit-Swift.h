@@ -453,6 +453,13 @@ SWIFT_CLASS("_TtC9DyteUiKit21MeetingViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+@class UIScrollView;
+
+@interface MeetingViewController (SWIFT_EXTENSION(DyteUiKit)) <UIScrollViewDelegate>
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView * _Nonnull)scrollView;
+@end
+
 
 
 
@@ -499,6 +506,7 @@ SWIFT_CLASS("_TtC9DyteUiKit19SetupViewController")
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
 
+
 @class UITextField;
 
 @interface SetupViewController (SWIFT_EXTENSION(DyteUiKit)) <UITextFieldDelegate>
@@ -518,6 +526,7 @@ SWIFT_CLASS("_TtC9DyteUiKit23ShowPollsViewController")
 - (void)viewDidAppear:(BOOL)animated;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil SWIFT_UNAVAILABLE;
 @end
+
 
 
 

@@ -40,16 +40,15 @@ struct CreateParticipantResponseData: Codable {
 
 struct ApiService {
     
-    func createParticipant( meetingId: String?, createParticipantRequest: CreateParticipantRequest, success:@escaping(CreateParticipantResponse) -> Void, failure:@escaping(String) -> Void) {
+    func createParticipant( meetingId: String, createParticipantRequest: CreateParticipantRequest, success:@escaping(CreateParticipantResponse) -> Void, failure:@escaping(String) -> Void) {
         guard let url = URL(string:
-                                "https://\(Constants.IP_ADDRESS)/meetings/\(meetingId ?? "")/participants") else {
+                                "https://\(Constants.IP_ADDRESS)/meetings/\(meetingId)/participants") else {
             return
         }
         
         if let params = ["preset_name" : createParticipantRequest.preset_name ?? "",
                          "client_specific_id": createParticipantRequest.client_specific_id,
-                         "name" : createParticipantRequest.name ?? "",
-                         "picture" : "https://i.imgur.com/8IcjBP4.jpeg",
+                         "name" : createParticipantRequest.name ?? ""
         ] as? [String: Any] {
             NetworkManager.shared.postData(url: url, params: params, success: success, failure: failure)
         } else {

@@ -20,26 +20,29 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         meetingSetupViewModel.meetingSetupDelegate = self
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        joinUserNameTextField.isHidden = true
+        userNameTextField.isHidden = true
         //meetingCodeTextField.text = Constants.MEETING_ROOM_NAME
     }
     
     @IBAction func joinMeeting(_ sender: Any) {
         meetingCodeTextField.resignFirstResponder()
         self.view.showActivityIndicator()
-//        goToMeetingRoom(authToken: Constants.AUTH_TOKEN)
-        self.meetingSetupViewModel.joinCreatedMeeting(displayName: self.joinUserNameTextField.text, meetingID: meetingCodeTextField.text)
+        if let meetingId = meetingCodeTextField.text {
+            self.meetingSetupViewModel.joinCreatedMeeting(displayName: "Join as XYZ", meetingID: meetingId)
+        }
     }
-    
     
     @IBAction func startMeeting(_ sender: Any) {
 
         meetingNameTextField.resignFirstResponder()
         if let text = meetingNameTextField.text, !text.isEmpty {
             self.view.showActivityIndicator()
-            let req = CreateMeetingRequest(title: meetingNameTextField.text ?? "", preferred_region: "ap-south-1")
+            let req = CreateMeetingRequest(title: meetingNameTextField.text ?? "" , preferred_region: "ap-south-1")
             meetingSetupViewModel.startMeeting(request: req)
         } else {
             Utils.displayAlert(alertTitle: "Error", message: "Meeting Name Required")
@@ -47,11 +50,13 @@ class ViewController: UIViewController {
     }
     
     func goToMeetingRoom(authToken: String) {
-        let controller = SetupViewController(authtoken: authToken, baseUrl: Constants.BASE_URL, completion: { [weak self] in
-            guard let self = self else {return}
+       DyteUiKitEngine.setup(DyteMeetingInfoV2(authToken: authToken, enableAudio: true, enableVideo: true))
+       let controller = DyteUiKitEngine.shared.getInitialController {
+            [unowned self] in
             self.dismiss(animated: true)
             self.view.hideActivityIndicator()
-         })
+        }
+        controller.modalPresentationStyle = .fullScreen
         self.present(controller, animated: true)
     }
     
@@ -78,7 +83,9 @@ extension ViewController: MeetingSetupDelegate {
     
     
     func startMeetingSuccess(createMeetingResponse: CreateMeetingResponse) {
-        self.meetingSetupViewModel.joinCreatedMeeting(displayName: self.userNameTextField.text, meetingID: createMeetingResponse.data?.id)
+        if let meetingId = createMeetingResponse.data?.id {
+            self.meetingSetupViewModel.joinCreatedMeeting(displayName: "Join as XYZ", meetingID: meetingId)
+        }
     }
     
     func hideActivityIndicator() {

@@ -23,7 +23,6 @@ extension UIView {
         DispatchQueue.main.async {
             let container: UIView = UIView()
             container.frame = self.bounds // Set X and Y whatever you want
-            container.backgroundColor = .black
             container.tag = 11
             let activityView = UIActivityIndicatorView()
             activityView.tag = 12
