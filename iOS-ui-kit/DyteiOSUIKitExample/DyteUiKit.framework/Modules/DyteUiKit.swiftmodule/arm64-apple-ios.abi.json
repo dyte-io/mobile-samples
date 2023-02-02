@@ -3610,6 +3610,72 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "DyteMeetingInfo",
+                "printedName": "DyteiOSCore.DyteMeetingInfo",
+                "usr": "c:objc(cs)DOSCDyteMeetingInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DyteMobileClient",
+                "printedName": "DyteiOSCore.DyteMobileClient",
+                "usr": "c:objc(cs)DOSCDyteMobileClient"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:9DyteUiKit19SetupViewControllerC11meetingInfo12mobileClient7baseUrl10completionACSo015DOSCDyteMeetingH0C_So0n6MobileJ0CSSSgyyctcfc",
+            "mangledName": "$s9DyteUiKit19SetupViewControllerC11meetingInfo12mobileClient7baseUrl10completionACSo015DOSCDyteMeetingH0C_So0n6MobileJ0CSSSgyyctcfc",
+            "moduleName": "DyteUiKit",
+            "declAttributes": [
+              "Custom",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(meetingInfo:mobileClient:baseUrl:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SetupViewController",
+                "printedName": "DyteUiKit.SetupViewController",
+                "usr": "c:@M@DyteUiKit@objc(cs)SetupViewController"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "DyteMeetingInfoV2",
                 "printedName": "DyteiOSCore.DyteMeetingInfoV2",
                 "usr": "c:objc(cs)DOSCDyteMeetingInfoV2"
@@ -14499,6 +14565,13 @@
         "moduleName": "DyteUiKit"
       },
       {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DyteUiKit"
+      },
+      {
         "kind": "TypeDecl",
         "name": "DyteUiKitEngine",
         "printedName": "DyteUiKitEngine",
@@ -14615,14 +14688,41 @@
               },
               {
                 "kind": "TypeNominal",
+                "name": "DyteMeetingInfo",
+                "printedName": "DyteiOSCore.DyteMeetingInfo",
+                "usr": "c:objc(cs)DOSCDyteMeetingInfo"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:9DyteUiKit0abC6EngineC5setupyySo19DOSCDyteMeetingInfoCFZ",
+            "mangledName": "$s9DyteUiKit0abC6EngineC5setupyySo19DOSCDyteMeetingInfoCFZ",
+            "moduleName": "DyteUiKit",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setupV2",
+            "printedName": "setupV2(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
                 "name": "DyteMeetingInfoV2",
                 "printedName": "DyteiOSCore.DyteMeetingInfoV2",
                 "usr": "c:objc(cs)DOSCDyteMeetingInfoV2"
               }
             ],
             "declKind": "Func",
-            "usr": "s:9DyteUiKit0abC6EngineC5setupyySo21DOSCDyteMeetingInfoV2CFZ",
-            "mangledName": "$s9DyteUiKit0abC6EngineC5setupyySo21DOSCDyteMeetingInfoV2CFZ",
+            "usr": "s:9DyteUiKit0abC6EngineC7setupV2yySo019DOSCDyteMeetingInfoF0CFZ",
+            "mangledName": "$s9DyteUiKit0abC6EngineC7setupV2yySo019DOSCDyteMeetingInfoF0CFZ",
             "moduleName": "DyteUiKit",
             "static": true,
             "declAttributes": [
@@ -20910,1694 +21010,1694 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
       "kind": "FloatLiteral",
       "offset": 193,
       "length": 3,
       "value": "0.2"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 528,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewController.swift",
       "kind": "StringLiteral",
       "offset": 214,
       "length": 21,
       "value": "\"DyteUiKit.MeetingViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 429,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 646,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
       "offset": 699,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "BooleanLiteral",
       "offset": 859,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
       "offset": 895,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
       "offset": 944,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
       "kind": "FloatLiteral",
       "offset": 541,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
       "kind": "FloatLiteral",
       "offset": 574,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/CornerRadius.swift",
       "kind": "FloatLiteral",
       "offset": 605,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
       "kind": "StringLiteral",
       "offset": 804,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1307,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
       "kind": "BooleanLiteral",
       "offset": 1623,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ControlBarButton.swift",
       "kind": "StringLiteral",
       "offset": 120,
       "length": 16,
       "value": "\"DyteUiKit.ControlBarButton\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
       "kind": "FloatLiteral",
       "offset": 362,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
       "kind": "FloatLiteral",
       "offset": 394,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
       "kind": "FloatLiteral",
       "offset": 439,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/BorderSize\/BorderSize.swift",
       "kind": "FloatLiteral",
       "offset": 465,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "FloatLiteral",
       "offset": 2010,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "StringLiteral",
       "offset": 2105,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "FloatLiteral",
       "offset": 2435,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "StringLiteral",
       "offset": 2735,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteNameTag.swift",
       "kind": "StringLiteral",
       "offset": 1782,
       "length": 11,
       "value": "\"DyteUiKit.DyteNameTag\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 201,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 234,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 303,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 344,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 427,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "BooleanLiteral",
       "offset": 816,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "IntegerLiteral",
       "offset": 852,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "BooleanLiteral",
       "offset": 2954,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteGridView.swift",
       "kind": "StringLiteral",
       "offset": 109,
       "length": 8,
       "value": "\"DyteUiKit.GridView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Font\/FontSize.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Font\/FontSize.swift",
       "kind": "IntegerLiteral",
       "offset": 406,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 710,
       "length": 18,
       "value": "\"icon_mic_enabled\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 19,
       "value": "\"icon_mic_disabled\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1023,
       "length": 20,
       "value": "\"icon_video_enabled\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1125,
       "length": 21,
       "value": "\"icon_video_disabled\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1343,
       "length": 14,
       "value": "\"icon_setting\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1493,
       "length": 12,
       "value": "\"Join in as\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1645,
       "length": 18,
       "value": "\"Insert your name\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1790,
       "length": 6,
       "value": "\"Join\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 1908,
       "length": 19,
       "value": "\"24 people Present\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "BooleanLiteral",
-      "offset": 2862,
+      "offset": 3312,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SetupViewController.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 19,
       "value": "\"DyteUiKit.SetupViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/PluginViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/PluginViewController.swift",
       "kind": "Array",
       "offset": 259,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/PluginViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/PluginViewController.swift",
       "kind": "StringLiteral",
       "offset": 155,
       "length": 20,
       "value": "\"DyteUiKit.PluginViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BackgroundColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BackgroundColor.swift",
       "kind": "FloatLiteral",
       "offset": 367,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BackgroundColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BackgroundColor.swift",
       "kind": "StringLiteral",
       "offset": 441,
       "length": 9,
       "value": "\"#050505\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
       "kind": "FloatLiteral",
       "offset": 360,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
       "kind": "StringLiteral",
       "offset": 408,
       "length": 9,
       "value": "\"#0246FD\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/BrandColor.swift",
       "kind": "FloatLiteral",
       "offset": 439,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/ChatViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/ChatViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 454,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/ChatViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/Prebuilt\/ChatViewController.swift",
       "kind": "StringLiteral",
       "offset": 165,
       "length": 18,
       "value": "\"DyteUiKit.ChatViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SettingViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SettingViewController.swift",
       "kind": "StringLiteral",
       "offset": 241,
       "length": 10,
       "value": "\"Settings\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SettingViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/SettingViewController.swift",
       "kind": "StringLiteral",
       "offset": 136,
       "length": 21,
       "value": "\"DyteUiKit.SettingViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 845,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 992,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1046,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1101,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1398,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1485,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 1534,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 931,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1893,
       "length": 2,
       "value": "40"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 1923,
       "length": 20,
       "value": "\"Enter some text...\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 379,
       "length": 18,
       "value": "\"DyteUiKit.AutoSizingTextView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 3986,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 4068,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 4201,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 3897,
       "length": 23,
       "value": "\"DyteUiKit.AutoSizingTitleTextView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 5175,
       "length": 13,
       "value": "\"Add Options\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5384,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 5416,
       "length": 34,
       "value": "\"Please insert voting option text\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5524,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 9677,
       "length": 17,
       "value": "\"DyteUiKit.TextFieldBaseView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 5005,
       "length": 10,
       "value": "\"DyteUiKit.AddOptions\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12480,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 12575,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 13587,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 12224,
       "length": 13,
       "value": "\"DyteUiKit.SelectionView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 15102,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 15198,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 14770,
       "length": 17,
       "value": "\"DyteUiKit.ListSelectionView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 17939,
       "length": 13,
       "value": "\"Create Poll\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 18019,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18175,
       "length": 10,
       "value": "\"Question\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18204,
       "length": 16,
       "value": "\"Ask a question\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18255,
       "length": 50,
       "value": "\"Please insert valid question to be asked in poll\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 18444,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18679,
       "length": 27,
       "value": "\"icon_radiobutton_selected\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18783,
       "length": 29,
       "value": "\"icon_radiobutton_unselected\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18997,
       "length": 11,
       "value": "\"Anonymous\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 19046,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 19184,
       "length": 27,
       "value": "\"Hide result before voting\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 19262,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 19337,
       "length": 13,
       "value": "\"Show Result\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 19651,
       "length": 8,
       "value": "\"Cancel\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 19924,
       "length": 13,
       "value": "\"  Publish  \""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 17510,
       "length": 14,
       "value": "\"DyteUiKit.CreatePollView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/CreatePollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 21700,
       "length": 25,
       "value": "\"DyteUiKit.CreatePollsViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "FloatLiteral",
       "offset": 376,
       "length": 3,
       "value": "1.5"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "FloatLiteral",
       "offset": 1072,
       "length": 4,
       "value": "49.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "FloatLiteral",
       "offset": 1148,
       "length": 4,
       "value": "34.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "FloatLiteral",
       "offset": 1223,
       "length": 4,
       "value": "10.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "Array",
       "offset": 1287,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTabBar.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 10,
       "value": "\"DyteUiKit.DyteTabBar\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "StringLiteral",
       "offset": 126,
       "length": 13,
       "value": "\"DyteUiKit.DyteTextField\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "IntegerLiteral",
       "offset": 1271,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "IntegerLiteral",
       "offset": 1278,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "StringLiteral",
       "offset": 1401,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "StringLiteral",
       "offset": 1497,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "FloatLiteral",
       "offset": 1572,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "FloatLiteral",
       "offset": 1610,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTextFieldAtom.swift",
       "kind": "StringLiteral",
       "offset": 716,
       "length": 17,
       "value": "\"DyteUiKit.DyteTextFieldAtom\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/BaseAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/BaseAtom.swift",
       "kind": "BooleanLiteral",
       "offset": 268,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/BaseAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/BaseAtom.swift",
       "kind": "BooleanLiteral",
       "offset": 406,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
       "kind": "FloatLiteral",
       "offset": 1463,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
       "kind": "FloatLiteral",
       "offset": 1584,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/ColorExtension.swift",
       "kind": "FloatLiteral",
       "offset": 1718,
       "length": 4,
       "value": "30.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
       "kind": "BooleanLiteral",
       "offset": 420,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
       "kind": "BooleanLiteral",
       "offset": 654,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
       "kind": "BooleanLiteral",
       "offset": 871,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/PluginCell.swift",
       "kind": "IntegerLiteral",
       "offset": 924,
       "length": 2,
       "value": "16"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3784,
       "length": 9,
       "value": "\"#050505\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3850,
       "length": 9,
       "value": "\"#0246FD\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3929,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 3999,
       "length": 9,
       "value": "\"#111111\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 4072,
       "length": 9,
       "value": "\"#FF2D2D\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 4142,
       "length": 9,
       "value": "\"#83D017\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "StringLiteral",
       "offset": 4212,
       "length": 9,
       "value": "\"#FFCD07\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
       "offset": 4278,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
       "offset": 4337,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
       "offset": 4394,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
       "offset": 4450,
       "length": 3,
       "value": "1.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/DesignLibrary.swift",
       "kind": "FloatLiteral",
       "offset": 4500,
       "length": 3,
       "value": "2.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Spacing\/SpaceToken.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Spacing\/SpaceToken.swift",
       "kind": "IntegerLiteral",
       "offset": 465,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 513,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 562,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 748,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 1289,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "BooleanLiteral",
       "offset": 3263,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 138,
       "length": 21,
       "value": "\"DyteUiKit.SelectionProgressView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5722,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5771,
       "length": 2,
       "value": "14"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 5955,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 6140,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 5411,
       "length": 25,
       "value": "\"DyteUiKit.ListProgressSelectionView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 9749,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 9802,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 9959,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 10008,
       "length": 2,
       "value": "12"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 9301,
       "length": 9,
       "value": "\"DyteUiKit.ShowPolls\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 17623,
       "length": 7,
       "value": "\"Polls\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 18024,
       "length": 87,
       "value": "\"No active polls! \n\n Let's start a new poll now by clicking Create Poll button below\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "IntegerLiteral",
       "offset": 18143,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/ShowPollsViewController.swift",
       "kind": "StringLiteral",
       "offset": 17497,
       "length": 23,
       "value": "\"DyteUiKit.ShowPollsViewController\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteMoreMenu.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteMoreMenu.swift",
       "kind": "StringLiteral",
       "offset": 259,
       "length": 12,
       "value": "\"DyteUiKit.DyteMoreMenu\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
       "kind": "StringLiteral",
       "offset": 125,
       "length": 22,
       "value": "\"DyteUiKit.NextPreviousButtonView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
       "kind": "IntegerLiteral",
       "offset": 4393,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
       "kind": "StringLiteral",
       "offset": 4439,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
       "kind": "BooleanLiteral",
       "offset": 4863,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/ScreenShareTabButtons.swift",
       "kind": "StringLiteral",
       "offset": 3672,
       "length": 21,
       "value": "\"DyteUiKit.ScreenShareTabButtons\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
       "kind": "FloatLiteral",
       "offset": 418,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
       "kind": "StringLiteral",
       "offset": 474,
       "length": 9,
       "value": "\"#FFFFFF\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
       "kind": "FloatLiteral",
       "offset": 1656,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
       "kind": "StringLiteral",
       "offset": 1712,
       "length": 9,
       "value": "\"#111111\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Tokens\/Colors\/TextColor.swift",
       "kind": "FloatLiteral",
       "offset": 1743,
       "length": 4,
       "value": "12.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
       "kind": "FloatLiteral",
       "offset": 1629,
       "length": 5,
       "value": "250.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
       "kind": "IntegerLiteral",
       "offset": 1740,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
       "kind": "StringLiteral",
       "offset": 1943,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteCustomPickerView.swift",
       "kind": "StringLiteral",
       "offset": 698,
       "length": 20,
       "value": "\"DyteUiKit.DyteCustomPickerView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
       "kind": "StringLiteral",
       "offset": 150,
       "length": 14,
       "value": "\"DyteUiKit.ActiveListView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
       "kind": "IntegerLiteral",
       "offset": 1793,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DytePluginView.swift",
       "kind": "StringLiteral",
       "offset": 1446,
       "length": 10,
       "value": "\"DyteUiKit.PluginView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "BooleanLiteral",
       "offset": 1427,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "FloatLiteral",
       "offset": 2937,
       "length": 4,
       "value": "48.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteButtonAtom.swift",
       "kind": "StringLiteral",
       "offset": 1356,
       "length": 14,
       "value": "\"DyteUiKit.DyteButtonAtom\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 634,
       "length": 12,
       "value": "\"icon_cross\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 111,
       "length": 10,
       "value": "\"DyteUiKit.DyteTopBar\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 2054,
       "length": 13,
       "value": "\"DyteUiKit.RecordingView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 4286,
       "length": 24,
       "value": "\"icon_flipcamera_topbar\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 4430,
       "length": 5,
       "value": "\"Rec\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "BooleanLiteral",
       "offset": 4473,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteTopbar.swift",
       "kind": "StringLiteral",
       "offset": 2012,
       "length": 17,
       "value": "\"DyteUiKit.DyteMeetingTopBar\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteVideoPeerView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteVideoPeerView.swift",
       "kind": "StringLiteral",
       "offset": 530,
       "length": 17,
       "value": "\"DyteUiKit.DyteVideoPeerView\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 8092,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 8117,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 8780,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 9373,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 9999,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 10074,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 10708,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 10783,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 11423,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 11498,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 12142,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 12217,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 12876,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 12951,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 13606,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 13681,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 14328,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 14403,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 15047,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 15122,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 15708,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 15733,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 16301,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 16418,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 18354,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 18915,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "IntegerLiteral",
       "offset": 20645,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 17,
       "value": "\"DyteUiKit.ConstraintCreator\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21427,
       "length": 19,
       "value": "\"leadingConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21487,
       "length": 20,
       "value": "\"trailingConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21543,
       "length": 15,
       "value": "\"topConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21597,
       "length": 18,
       "value": "\"bottomConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21654,
       "length": 18,
       "value": "\"heightConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21710,
       "length": 17,
       "value": "\"widthConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21767,
       "length": 19,
       "value": "\"centerXConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21826,
       "length": 19,
       "value": "\"centerYConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/UIView+Layout.swift",
       "kind": "StringLiteral",
       "offset": 21889,
       "length": 23,
       "value": "\"aspectRatioConstraint\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
       "kind": "BooleanLiteral",
       "offset": 5950,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7212,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7496,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Screens\/MeetingViewModel.swift",
       "kind": "IntegerLiteral",
       "offset": 7708,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "StringLiteral",
       "offset": 667,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "StringLiteral",
       "offset": 792,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "StringLiteral",
       "offset": 888,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "FloatLiteral",
       "offset": 963,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "FloatLiteral",
       "offset": 1001,
       "length": 3,
       "value": "4.0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "IntegerLiteral",
       "offset": 1377,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteDropDownAtom.swift",
       "kind": "StringLiteral",
       "offset": 119,
       "length": 16,
       "value": "\"DyteUiKit.DyteDropdownAtom\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 22,
       "value": "\"Error Loading Image!\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 260,
       "length": 8,
       "value": "\"Error!\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Constants.swift",
       "kind": "StringLiteral",
       "offset": 301,
       "length": 70,
       "value": "\"Something is wrong with recording, don't worry already, we're on it!\""
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
       "kind": "IntegerLiteral",
       "offset": 669,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
       "kind": "BooleanLiteral",
       "offset": 695,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/sudhir\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
+      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/DyteReusableScrollView.swift",
       "kind": "StringLiteral",
       "offset": 492,
       "length": 16,

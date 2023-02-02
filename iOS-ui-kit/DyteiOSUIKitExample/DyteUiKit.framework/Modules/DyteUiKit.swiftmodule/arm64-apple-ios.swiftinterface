@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name DyteUiKit
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 @_exported import DyteUiKit
@@ -116,6 +116,7 @@ public protocol NameTagDesignDependency {
   @objc deinit
 }
 @objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class SetupViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public init(meetingInfo: DyteiOSCore.DyteMeetingInfo, mobileClient: DyteiOSCore.DyteMobileClient, baseUrl: Swift.String? = nil, completion: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) public init(meetingInfo: DyteiOSCore.DyteMeetingInfoV2, mobileClient: DyteiOSCore.DyteMobileClient, baseUrl: Swift.String? = nil, completion: @escaping () -> Swift.Void)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillAppear(_ animated: Swift.Bool)
@@ -420,7 +421,8 @@ extension UIKit.UIStackView {
 @_hasMissingDesignatedInitializers public class DyteUiKitEngine {
   public static let shared: DyteUiKit.DyteUiKitEngine
   final public let mobileClient: DyteiOSCore.DyteMobileClient
-  public class func setup(_ config: DyteiOSCore.DyteMeetingInfoV2)
+  public class func setup(_ config: DyteiOSCore.DyteMeetingInfo)
+  public class func setupV2(_ config: DyteiOSCore.DyteMeetingInfoV2)
   public func getInitialController(completion: @escaping () -> Swift.Void) -> DyteUiKit.SetupViewController
   @objc deinit
 }

@@ -8,6 +8,7 @@
 import UIKit
 import DyteUiKit
 import DyteiOSCore
+import AVKit
 
 class ViewController: UIViewController {
         
@@ -20,20 +21,59 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
+    }
+    
+    private func setupUI() {
+        
+        //set delegate to catch pest action
+        meetingCodeTextField.delegate = self
         
         meetingSetupViewModel.meetingSetupDelegate = self
+        
+        //Handle keyboard
         let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
         joinUserNameTextField.isHidden = true
         userNameTextField.isHidden = true
         //meetingCodeTextField.text = Constants.MEETING_ROOM_NAME
+        
+        NotificationCenter.default.addObserver(forName: AVAudioSession.routeChangeNotification, object: nil, queue: nil, using: routeChange)
+    }
+    
+    private func routeChange(_ notification: Notification) {
+        guard let info = notification.userInfo,
+                let value = info[AVAudioSessionRouteChangeReasonKey] as? UInt,
+                let reason = AVAudioSession.RouteChangeReason(rawValue: value) else { return }
+
+            switch reason {
+            case .categoryChange:
+                try? AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
+            case .oldDeviceUnavailable:
+                try? AVAudioSession.sharedInstance().overrideOutputAudioPort(.speaker)
+            default:
+                print("Error: other reason for speaker route change!")
+            }
     }
     
     @IBAction func joinMeeting(_ sender: Any) {
         meetingCodeTextField.resignFirstResponder()
-        self.view.showActivityIndicator()
-        if let meetingId = meetingCodeTextField.text {
-            self.meetingSetupViewModel.joinCreatedMeeting(displayName: "Join as XYZ", meetingID: meetingId)
+        
+        if let text = meetingCodeTextField.text, !text.isEmpty {
+            self.view.showActivityIndicator()
+            if let meetingId = meetingCodeTextField.text {
+                if meetingId.contains("https://app.dyte.io/v2/meeting?id=") {
+                    if let meeting = meetingId.components(separatedBy:"=").last {
+                        self.meetingSetupViewModel.joinCreatedMeeting(displayName: "Join as XYZ", meetingID: meeting)
+                    }
+                } else {
+                    self.meetingSetupViewModel.joinCreatedMeeting(displayName: "Join as XYZ", meetingID: meetingId)
+                }
+                meetingCodeTextField.text = ""
+            }
+        } else {
+            Utils.displayAlert(alertTitle: "Error", message: "Invalid Meeting")
         }
     }
     
@@ -44,13 +84,14 @@ class ViewController: UIViewController {
             self.view.showActivityIndicator()
             let req = CreateMeetingRequest(title: meetingNameTextField.text ?? "" , preferred_region: "ap-south-1")
             meetingSetupViewModel.startMeeting(request: req)
+            meetingNameTextField.text = ""
         } else {
             Utils.displayAlert(alertTitle: "Error", message: "Meeting Name Required")
         }
     }
     
     func goToMeetingRoom(authToken: String) {
-       DyteUiKitEngine.setup(DyteMeetingInfoV2(authToken: authToken, enableAudio: true, enableVideo: true))
+       DyteUiKitEngine.setupV2(DyteMeetingInfoV2(authToken: authToken, enableAudio: true, enableVideo: true))
        let controller = DyteUiKitEngine.shared.getInitialController {
             [unowned self] in
             self.dismiss(animated: true)
@@ -90,5 +131,14 @@ extension ViewController: MeetingSetupDelegate {
     
     func hideActivityIndicator() {
         self.view.hideActivityIndicator()
+    }
+}
+
+extension ViewController: UITextFieldDelegate {
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        if let paste = UIPasteboard.general.string, text == paste {
+            meetingCodeTextField.text = paste
+        }
+        return true
     }
 }
