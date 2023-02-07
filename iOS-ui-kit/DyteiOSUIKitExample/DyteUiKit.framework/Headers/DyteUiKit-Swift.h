@@ -367,6 +367,7 @@ SWIFT_CLASS("_TtC9DyteUiKit25CreatePollsViewController")
 SWIFT_CLASS("_TtC9DyteUiKit14DyteButtonAtom")
 @interface DyteButtonAtom : UIButton
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+@property (nonatomic, getter=isSelected) BOOL selected;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
@@ -441,6 +442,26 @@ SWIFT_CLASS("_TtC9DyteUiKit17DyteVideoPeerView")
 @interface DyteVideoPeerView : DytePeerView
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC9DyteUiKit13DyteVideoView")
+@interface DyteVideoView : UIView
+- (void)removeFromSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class DOSCDyteMeetingParticipant;
+
+@interface DyteVideoView (SWIFT_EXTENSION(DyteUiKit)) <DOSCDyteParticipantUpdateListener>
+- (void)onAudioUpdateParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant isEnabled:(BOOL)isEnabled;
+- (void)onPinnedParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant;
+- (void)onScreenShareEndedParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant;
+- (void)onScreenShareStartedParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant;
+- (void)onUnpinnedParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant;
+- (void)onUpdateParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant;
+- (void)onVideoUpdateParticipant:(DOSCDyteMeetingParticipant * _Nonnull)participant isEnabled:(BOOL)isEnabled;
 @end
 
 
@@ -537,13 +558,6 @@ SWIFT_CLASS("_TtC9DyteUiKit23ShowPollsViewController")
 
 
 
-
-
-SWIFT_CLASS("_TtC9DyteUiKit9VideoView")
-@interface VideoView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
-@end
 
 #endif
 #if defined(__cplusplus)
