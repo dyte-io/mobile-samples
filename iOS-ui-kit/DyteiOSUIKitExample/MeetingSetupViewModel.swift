@@ -34,25 +34,34 @@ final class MeetingSetupViewModel {
     
     func joinCreatedMeeting(displayName: String, meetingID: String) {
         
-        let req = CreateParticipantRequest(
-            client_specific_id: Constants.UUID,
-            name: displayName,
-            preset_name: "PH_demo", picture: "")
-        
-        ApiService().createParticipant(meetingId: meetingID, createParticipantRequest: req, success: { [weak self] response in
-            self?.meetingSetupDelegate?.hideActivityIndicator()
-            self?.createParticipantResponse = response
-            if let authToken = response.data?.token {
-                self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID)
-            } else {
-                print("Error: missing authToken: \(response.data?.token ?? "")")
-            }
+        if let authToken = UserDefaults.standard.string(forKey: meetingID) {
+            //Use cached token instead of network call
+            self.meetingSetupDelegate?.hideActivityIndicator()
+            self.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID)
+        } else {
             
-        }, failure: { [weak self] errorString in
-            DispatchQueue.main.async {
+            let req = CreateParticipantRequest(
+                client_specific_id: Constants.UUID,
+                name: displayName,
+                preset_name: "PH_demo", picture: "")
+            
+            ApiService().createParticipant(meetingId: meetingID, createParticipantRequest: req, success: { [weak self] response in
                 self?.meetingSetupDelegate?.hideActivityIndicator()
-            }
-            print("Error: createParticipant API :\(errorString)")
-        })
+                self?.createParticipantResponse = response
+                if let authToken = response.data?.token {
+                    //Store token for future use
+                    UserDefaults.standard.setValue(authToken, forKey: meetingID)
+                    self?.meetingSetupDelegate?.createParticipantSuccess(authToken: authToken, meetingID: meetingID)
+                } else {
+                    print("Error: missing authToken: \(response.data?.token ?? "")")
+                }
+                
+            }, failure: { [weak self] errorString in
+                DispatchQueue.main.async {
+                    self?.meetingSetupDelegate?.hideActivityIndicator()
+                }
+                print("Error: createParticipant API :\(errorString)")
+            })
+        }
     }
 }

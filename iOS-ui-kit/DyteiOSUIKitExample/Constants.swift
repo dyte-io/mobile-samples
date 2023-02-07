@@ -15,6 +15,6 @@ struct Constants {
     static let ORG_ID = Your Organization Id
     static let API_KEY = Insert your Api key
     static let BASE_URL = "https://api.cluster.dyte.in"
-    static let UUID = (UIDevice.current.identifierForVendor?.uuidString ?? "") + Date().debugDescription
+    static let UUID = UIDevice.current.identifierForVendor?.uuidString ?? ""
 
 }
