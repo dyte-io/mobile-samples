@@ -15,10 +15,12 @@
 		AA879BB729859E4F00E5D965 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BB529859E4F00E5D965 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; };
 		AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AABAEC00298BFCBD005DFEEF /* DyteiOSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */; };
-		AABAEC01298BFCBD005DFEEF /* DyteiOSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AABAEC06298C0ABC005DFEEF /* DyteUiKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABAEC05298C0ABC005DFEEF /* DyteUiKit.framework */; };
 		AABAEC07298C0ABC005DFEEF /* DyteUiKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AABAEC05298C0ABC005DFEEF /* DyteUiKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AABAEC0F2992EF5A005DFEEF /* DyteiOSCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = AABAEC0E2992EF5A005DFEEF /* DyteiOSCore.xcframework */; };
+		AABAEC102992EF5A005DFEEF /* DyteiOSCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AABAEC0E2992EF5A005DFEEF /* DyteiOSCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AABFE3352992F2FE00DB67F7 /* iosMain in Resources */ = {isa = PBXBuildFile; fileRef = AABFE3332992F2FE00DB67F7 /* iosMain */; };
+		AABFE3362992F2FE00DB67F7 /* commonMain in Resources */ = {isa = PBXBuildFile; fileRef = AABFE3342992F2FE00DB67F7 /* commonMain */; };
 		BDB77EED2983AC8E00CACD4B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */; };
 		BDB77EEF2983AC8E00CACD4B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */; };
 		BDB77EF12983AC8E00CACD4B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB77EF02983AC8E00CACD4B /* ViewController.swift */; };
@@ -39,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AABAEC01298BFCBD005DFEEF /* DyteiOSCore.xcframework in Embed Frameworks */,
+				AABAEC102992EF5A005DFEEF /* DyteiOSCore.xcframework in Embed Frameworks */,
 				AA879BAD298597CE00E5D965 /* Starscream.framework in Embed Frameworks */,
 				AA879BB0298597D800E5D965 /* DyteiOSSocketIO.framework in Embed Frameworks */,
 				AA879BC02985AF7500E5D965 /* mediasoup_client_ios.framework in Embed Frameworks */,
@@ -57,7 +59,9 @@
 		AA879BB529859E4F00E5D965 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebRTC.framework; path = DyteiOSUIKitExample/WebRTC.framework; sourceTree = "<group>"; };
 		AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mediasoup_client_ios.framework; path = DyteiOSUIKitExample/mediasoup_client_ios.framework; sourceTree = "<group>"; };
 		AABAEC05298C0ABC005DFEEF /* DyteUiKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DyteUiKit.framework; path = DyteiOSUIKitExample/DyteUiKit.framework; sourceTree = "<group>"; };
-		BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DyteiOSCore.xcframework; path = DyteiOSUIKitExample/DyteiOSCore.xcframework; sourceTree = "<group>"; };
+		AABAEC0E2992EF5A005DFEEF /* DyteiOSCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = DyteiOSCore.xcframework; path = DyteiOSUIKitExample/DyteiOSCore.xcframework; sourceTree = "<group>"; };
+		AABFE3332992F2FE00DB67F7 /* iosMain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = iosMain; path = ../../../MobileCoreKMM/shared/src/iosMain; sourceTree = "<group>"; };
+		AABFE3342992F2FE00DB67F7 /* commonMain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = commonMain; path = ../../../MobileCoreKMM/shared/src/commonMain; sourceTree = "<group>"; };
 		BDB77EE92983AC8E00CACD4B /* DyteiOSUIKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DyteiOSUIKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AABAEC00298BFCBD005DFEEF /* DyteiOSCore.xcframework in Frameworks */,
+				AABAEC0F2992EF5A005DFEEF /* DyteiOSCore.xcframework in Frameworks */,
 				AA879BAC298597CE00E5D965 /* Starscream.framework in Frameworks */,
 				AA879BAF298597D800E5D965 /* DyteiOSSocketIO.framework in Frameworks */,
 				AA879BBF2985AF7500E5D965 /* mediasoup_client_ios.framework in Frameworks */,
@@ -93,8 +97,8 @@
 		AA879BA32985974700E5D965 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AABAEC0E2992EF5A005DFEEF /* DyteiOSCore.xcframework */,
 				AABAEC05298C0ABC005DFEEF /* DyteUiKit.framework */,
-				BD111F45298A865D0053AA1F /* DyteiOSCore.xcframework */,
 				AA879BBE2985AF7400E5D965 /* mediasoup_client_ios.framework */,
 				AA879BB529859E4F00E5D965 /* WebRTC.framework */,
 				AA879BAE298597D800E5D965 /* DyteiOSSocketIO.framework */,
@@ -123,6 +127,8 @@
 		BDB77EEB2983AC8E00CACD4B /* DyteiOSUIKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				AABFE3342992F2FE00DB67F7 /* commonMain */,
+				AABFE3332992F2FE00DB67F7 /* iosMain */,
 				BDB77EEC2983AC8E00CACD4B /* AppDelegate.swift */,
 				BDB77EEE2983AC8E00CACD4B /* SceneDelegate.swift */,
 				BDB77EF02983AC8E00CACD4B /* ViewController.swift */,
@@ -201,6 +207,8 @@
 				BDB77F172983B29D00CACD4B /* Main.storyboard in Resources */,
 				BDB77F192983B2D300CACD4B /* Assets.xcassets in Resources */,
 				BDB77EF92983AC8F00CACD4B /* LaunchScreen.storyboard in Resources */,
+				AABFE3352992F2FE00DB67F7 /* iosMain in Resources */,
+				AABFE3362992F2FE00DB67F7 /* commonMain in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,7 +365,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QVRMZNCH5A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -381,7 +389,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dyte.core.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -400,7 +408,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = QVRMZNCH5A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -424,7 +432,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dyte.core.sample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

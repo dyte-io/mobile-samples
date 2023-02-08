@@ -21983,35 +21983,28 @@
     {
       "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "BooleanLiteral",
-      "offset": 646,
-      "length": 5,
-      "value": "false"
+      "offset": 679,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 699,
+      "offset": 874,
       "length": 2,
-      "value": "14"
-    },
-    {
-      "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
-      "kind": "BooleanLiteral",
-      "offset": 859,
-      "length": 5,
-      "value": "false"
+      "value": "12"
     },
     {
       "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 895,
+      "offset": 1137,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/shaunak\/Documents\/GitHub\/ios-ui-kit\/DyteUiKit\/DyteUiKit\/Atoms\/Prebuilt\/MessageCell.swift",
       "kind": "IntegerLiteral",
-      "offset": 944,
+      "offset": 1186,
       "length": 2,
       "value": "14"
     },
